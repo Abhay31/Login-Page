@@ -1,0 +1,259 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-header img.emblem {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.login-header h2 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+form {
+  width: 100%; 
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group {
+  display: flex;
+  align-items: center; 
+}
+
+.input-group .input-group-text {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 11px;
+}
+
+.input-group .input-group-text i {
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.captcha-group {
+  text-align: left;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.captcha-image {
+  margin-right: 10px;
+}
+
+.refresh-captcha {
+  font-size: 0.9rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-google {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+.or-separator span {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.text-danger {
+  color: red;
+}
+
+/* Responsive Design */
+
+/* For devices with a max-width of 768px (tablets) */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .login-header h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .captcha-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .captcha-image {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .refresh-captcha {
+    font-size: 0.8rem;
+  }
+
+  .btn-google {
+    font-size: 0.9rem;
+  }
+
+  .or-separator {
+    font-size: 1rem;
+  }
+}
+
+/* For devices with a max-width of 576px (mobile devices) */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .btn-sm{
+    height: 50px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .login-header img.emblem {
+    width: 40px;
+  }
+
+  .login-header h2 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .captcha-container {
+    align-items: center;
+  }
+
+  .refresh-captcha {
+    font-size: 0.7rem;
+  }
+
+  .btn-google {
+    font-size: 0.8rem;
+  }
+
+  .or-separator {
+    font-size: 0.9rem;
+  }
+
+  .btn-block {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+/* OTP input container */
+.otp-container {
+  text-align: left;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Individual OTP input box */
+.otp-input-box {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.otp-input-box:focus {
+  border-color: #007bff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .otp-input-box {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .otp-input-box {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link p {
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
